@@ -24,3 +24,6 @@ Link - **https://github.com/Ad1tya-007/stormhacks-2024.git**
 * Aditya Kulkarni
 * Jung-Hyun Andrew Kim
 * Kevin Sugeng
+
+## Note
+* if you want to run the backend locally then change the port in main.js to 3001.
