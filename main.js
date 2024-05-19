@@ -6,7 +6,6 @@ const { connect } = require('mongoose');
 const cors = require("cors");
 const app = express();
 
-app.set('view engine', 'ejs');
 app.use(cors())
 // Connect to MongoDB
 connect('mongodb+srv://mentorme6969:mentorMe6969@mentorme.dewbckv.mongodb.net/', {
