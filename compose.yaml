@@ -7,4 +7,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - mode: ingress
-        target: 3000
+        target: 3001
