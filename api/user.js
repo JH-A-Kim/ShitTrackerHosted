@@ -20,9 +20,9 @@ router.post('/newUser', async (req, res)=>{
 })
 router.get('/check', async (req, res) => {
     try{
-        const emailAndPass = await User.findOne({email: req.body.email, password: req.body.password});
+        const emailAndPass = await User.findOne({email: req.body.email});
         if(emailAndPass){
-            res.json({msg:"User Credentials correct"});
+            res.json({msg:"User Credentials correct", user: emailAndPass});
         }
         else {
             res.json({msg: "User Credentials incorrect"});
