@@ -18,7 +18,7 @@ router.post('/newUser', async (req, res)=>{
         res.json(e).status(500);
     }
 })
-router.get('/check', async (req, res) => {
+router.post('/check', async (req, res) => {
     try{
         const emailAndPass = await User.findOne({email: req.body.email});
         if(emailAndPass){

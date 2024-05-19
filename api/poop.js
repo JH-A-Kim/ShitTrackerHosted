@@ -51,7 +51,7 @@ router.delete('/delete/:id', async (req, res) =>{
     }
 })
 
-router.get('/5poops', async (req, res) =>{
+router.post('/5poops', async (req, res) =>{
     try {
         const mostRecentPoops = await Poops.find({email: req.body.email}).sort({date: 1}).limit(5);
         res.json({msg: "Success", poop: mostRecentPoops})
@@ -61,7 +61,7 @@ router.get('/5poops', async (req, res) =>{
     }
 })
 
-router.get('/allPoops', async (req, res)=> {
+router.post('/allPoops', async (req, res)=> {
     try{
         const allPoops = await Poops.find({email: req.body.email}).sort({date: 1});
         res.json({msg: "Success", poop: allPoops});
