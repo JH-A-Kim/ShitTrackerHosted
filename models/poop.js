@@ -4,7 +4,7 @@ const poopSchema = new mongoose.Schema(
   {
     description: String,
     email: String,
-    size: number,
+    size: Number,
     date: String,
   },
   {
